@@ -1,0 +1,794 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/* Navbar */
+nav {
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+h2 {
+    color: #1e3a8a;
+}
+
+/* Buttons */
+button {
+    background: #2563eb;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 12px;
+    background: #f1f5f9;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: #e0e7ff;
+}
+
+/* Navbar Layout */
+.navbar {
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    padding: 15px;
+    color: white;
+}
+
+/* Align logo + text */
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+/* Logo */
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Title */
+.title h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.title p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Center everything */
+.container {
+    text-align: center;
+}
+
+/* Improve card */
+.card {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Login Card Centering */
+.login-card {
+    max-width: 400px;
+    margin: 60px auto;
+    text-align: left;
+}
+
+/* Form spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Inputs full width */
+input, select {
+    width: 100%;
+}
+
+/* Button full width */
+button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #e0e7ff;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 12s linear infinite;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* LOGIN PAGE DESIGN */
+
+.login-body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.login-box p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.login-box input,
+.login-box select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background: #1e40af;
+}
+
+/* HEXAGON DASHBOARD */
+
+.hex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* controls spacing */
+    margin-top: 40px;
+}
+.hex {
+    width: 160px;
+    height: 160px;
+    gap: 25px;
+}
+
+.hex {
+    width: 150px;
+    height: 170px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    clip-path: polygon(
+        50% 0%, 
+        100% 25%, 
+        100% 75%, 
+        50% 100%, 
+        0% 75%, 
+        0% 25%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.hex:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #1e40af, #1e3a8a);
+}
+
+.hex-content {
+    text-align: center;
+    font-size: 20px;
+}
+
+.hex-content p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Default Blue (for any hexagon beyond the first 3) */
+.hex {
+    background: linear-gradient(135deg, #2563eb, #1e3a8a); 
+    /* ... your other hex code ... */
+}
+
+/* Specific Colors for the first three */
+.hex-container .hex:nth-child(1) {
+    background: linear-gradient(135deg, #16a34a, #15803d) !important;
+}
+
+.hex-container .hex:nth-child(2) {
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+}
+
+.hex-container .hex:nth-child(3) {
+    background: linear-gradient(135deg, #dc2626, #991b1b) !important;
+
+    /* HEXAGON HOVER EFFECT */
+.hexagon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hexagon:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+.hexagon:active {
+    transform: scale(0.95);
+}
+/* Upload (Green Glow) */
+.hexagon.upload:hover {
+    box-shadow: 0 0 20px rgba(34,197,94,0.6);
+}
+
+/* Manage (Orange Glow) */
+.hexagon.manage:hover {
+    box-shadow: 0 0 20px rgba(251,146,60,0.6);
+}
+
+/* Logout (Red Glow) */
+.hexagon.logout:hover {
+    box-shadow: 0 0 20px rgba(239,68,68,0.6);
+}
+}
+
+/* SPLIT LOGIN DESIGN */
+
+.split-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.left-side {
+    width: 50%;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.left-side h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.left-side p {
+    font-size: 16px;
+}
+
+/* RIGHT SIDE */
+.right-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN BOX */
+.login-box {
+    width: 100%;
+    max-width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-box input,
+.login-box select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+    }
+    .left-side, .right-side {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+/* LOGIN BACKGROUND WITH IMAGE */
+
+.login-body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+
+    background: url("../image/background.jpg") no-repeat center center/cover;
+    
+    position: relative;
+}
+
+/* 1. MAIN BODY STYLING */
+.login-body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Background image - climbs out of CSS folder to find Images */
+    background: url("../image/background.jpg") no-repeat center center/cover fixed;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* 2. LIGHT & ATTRACTIVE OVERLAY */
+.login-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 80% white transparency makes the photo light and professional */
+    background: rgba(255, 255, 255, 0.8);
+    /* Soft blur effect for that modern look */
+    backdrop-filter: blur(8px);
+    z-index: 0;
+}
+
+/* 3. LAYOUT CONTAINERS */
+.split-container {
+    position: relative;
+    z-index: 1; /* Ensures login box stays on top of the background */
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    width: 50%;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(37, 99, 235, 0.9));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.right-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 4. LOGIN COMPONENTS */
+.login-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* ================= LOGIN BACKGROUND ================= */
+
+.login-body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+
+    background-image: url("/fesac_platform/assets/image/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+/* LIGHT OVERLAY FOR BEAUTIFUL EFFECT */
+.login-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(255, 255, 255, 0.6); /* soft light */
+    backdrop-filter: blur(3px); /* slight blur */
+    z-index: 0;
+}
+
+/* ENSURE CONTENT IS ABOVE BACKGROUND */
+.split-container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+/* ================= LEFT SIDE ================= */
+
+.left-side {
+    width: 50%;
+    color: #1e3a8a;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.login-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.left-side h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.left-side p {
+    font-size: 16px;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.right-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================= LOGIN BOX ================= */
+
+.login-box {
+    width: 100%;
+    max-width: 350px;
+
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    text-align: center;
+}
+
+.login-box input,
+.login-box select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background: #1e40af;
+}
+
+/* LEVEL CARD */
+.level-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* FILE GRID */
+.file-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* FILE CARD */
+.file-card {
+    background: #f1f5f9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.file-card:hover {
+    background: #e0e7ff;
+}
+
+.file-card button {
+    margin-top: 10px;
+}
+
+/* EMPTY TEXT */
+.empty {
+    color: gray;
+    font-style: italic;
+}
+
+/* UPLOAD CARD */
+.upload-card {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* FORM GROUP */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* LABEL */
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+/* INPUT + SELECT */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON STYLE */
+.upload-card button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-card button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #1e40af, #1e3a8a);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 2px 0 20px rgba(0,0,0,0.3);
+    transition: left 0.3s ease;
+    
+    z-index: 999999; /* SUPER HIGH */
+    pointer-events: auto;
+}
+.sidebar * {
+    pointer-events: auto;
+}
+
+.menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+    padding: 15px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10000; /* ABOVE EVERYTHING */
+}
+* {
+    pointer-events: auto !important;
+}
+
+.container, nav, body {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.3);
+    display: none;
+
+    z-index: 999998;
+}
+
+.overlay.active {
+    display: block;
+}
+.hex-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    justify-content: center;  /* centers horizontally */
+    gap: 50px;
+    margin: 40px auto; /* centers block */
+}
+
+/* HEX BASE */
+.hex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* COLORS */
+.upload {
+    background: #16a34a; /* green */
+}
+
+.manage {
+    background: #f59e0b; /* yellow/orange */
+}
+
+.logout {
+    background: #dc2626; /* red */
+}
+
+.profile {
+    background: #2563eb; /* blue */
+}
+
+/* HOVER EFFECT */
+.hex:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
