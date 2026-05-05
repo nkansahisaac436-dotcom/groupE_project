@@ -38,4 +38,4 @@ This system is a web-based platform developed to allow lecturers to upload cours
 ✅ Functional prototype completed (90%+)
 
 ## 👨‍💻 Developed By
-Nkurumah Samuel,Nkansah Isaac,Regis Tegwende Ouedraogo / Group E
+Nkurumah Samuel,Nkansah Isaac,Ouedraogo Tegwende Regis   / Group E
