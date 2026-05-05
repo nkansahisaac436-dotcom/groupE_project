@@ -26,6 +26,7 @@ include("config/db.php");
             <li>Robotics (Coming Soon)</li>
             <li>Electrical Engineering (Coming Soon)</li>
             <li>Construction (Coming Soon)</li>
+             <li>Information Technology (Coming Soon)</li>
         </ul>
 
         <a href="auth/login.php">
